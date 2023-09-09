@@ -2,7 +2,7 @@
 
 dockerBuildPipeline(
         mainBranchCron: '@weekly',
-        ikmageBuilder: [
+        imageBuilder: [
                 baseImage: 'jenkins/ssh-agent:jdk11',
                 registryRepoName: 'kartaltabak/jenkins-ssh-agent-with-docker',
                 imageTestCommand: 'docker --version'
