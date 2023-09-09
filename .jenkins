@@ -18,7 +18,7 @@ pipeline {
                         def taggedName = repoName + ":" + tag
                         def image = docker.build(taggedName, "docker")
 
-                        sh "docker run --rm ${taggedName} -version"
+                        sh "docker run --rm ${taggedName} docker --version"
 
                         image.push()
 
