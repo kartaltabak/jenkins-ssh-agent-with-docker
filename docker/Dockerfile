@@ -1,4 +1,4 @@
-FROM jenkins/ssh-agent:jdk11
+FROM jenkins/ssh-agent:jdk21
 
 RUN echo PATH=$PATH >> /etc/environment
 
